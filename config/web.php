@@ -14,6 +14,7 @@ $config = [
     'modules'        => [
         'admin' => [
             'class' => 'app\modules\admin\Admin',
+			'defaultRoute'=> 'dashboard/index'
         ]
     ],
     'components' => [

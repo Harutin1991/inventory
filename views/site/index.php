@@ -10,7 +10,7 @@ $this->title = 'Home Page';
 <!-- Latest Product Begin -->
 <section class="latest-products spad">
     <div class="container">
-
+	<?php if($lastAddedProducts->count()):?>
         <div class="product-filter">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -42,6 +42,7 @@ $this->title = 'Home Page';
                 </div>
             <?php endforeach;?>
         </div>
+		<?php endif;?>
     </div>
 </section>
 <!-- Latest Product End -->
